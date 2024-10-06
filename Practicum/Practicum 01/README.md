@@ -44,19 +44,16 @@ std::cout << израз;
 ### Отпечатване на цели числа
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     int num = 42;
-    cout << "The value of num is " << num << endl;
-    return 0;
+    std::cout << "The value of num is " << num << endl;
 }
 ```
 
 ### Отпечатване на дробни числа
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
    double pi = 3.14159;

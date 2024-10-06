@@ -82,28 +82,19 @@ g++ main.cpp
 
 **`std::cout`** е стандартен обект за изход в C++, който се използва за отпечатване на данни на конзолата. Той е част от библиотеката **`<iostream>`**, която трябва да бъде включена в началото на програмата.
 
-Синтаксисът за използване на `std::cout` е следният:
-
-```cpp
-std::cout << израз;
-```
-
 ### Отпечатване на цели числа
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     int num = 42;
-    cout << "The value of num is " << num << endl;
-    return 0;
+    std::cout << "The value of num is " << num << endl;
 }
 ```
 
 ### Отпечатване на дробни числа
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
    double pi = 3.14159;
