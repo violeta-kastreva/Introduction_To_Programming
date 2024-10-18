@@ -10,7 +10,15 @@ int main() {
 	std::cout << "Please input x and y coordinates: ";
 	std::cin >> x >> y;
 
+	double distance = sqrt(x*x + y*y);
 
+	// On the edge of circle (distance == CIRCLE_RADIUS)
+	bool onEdge = fabsf64(distance - CIRCLE_RADIUS) <= EPSILON;
+
+	// In circle (distance < CIRCLE_RADIUS)
+	bool inCircle = !(distance > CIRCLE_RADIUS || onEdge);
+
+	// Print result
 
     return 0;
 }
